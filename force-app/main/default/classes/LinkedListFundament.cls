@@ -19,12 +19,92 @@ public with sharing class LinkedListFundament {
         System.debug('Null');
     }
 
-    public void add(NodeElement nodeElem) {
-        return null;
+    public Boolean add(Integer newElementData) {
+        NodeElement elemForAdd = new NodeElement(newElementData);
+        if(this.size == 0) {
+            this.head = elemForAdd;
+            size++;
+            return True;
+        } else if(this.size > 0) {
+            this.tail = elemForAdd;
+            return True;
+        } else {
+            System.debug('Can\'t add element');
+            return False;
+        }
     }
 
     public void add(Integer index, NodeElement nodeElem) {
-        return null;
+        System.debug('Null');
+    }     
+
+    public void addAll(List<String> innerList) {
+        System.debug('Null');
+    }
+    public void addAll(Set<String> innerList) {
+        System.debug('Null');
     }
 
+    public void clear(){
+        if(this.size > 0) {
+            try {
+                this.tail = null;
+                this.head = null;
+            } catch (Exception e) {
+                System.debug(e);
+            }
+        }
+    }
+
+    // public void clone() {
+    //     System.debug('Null');
+    // }
+
+    public void contains() {
+        System.debug('Null');
+    }
+
+    public void size() {
+        System.debug('Null');
+    }
+
+    public void deepClone() {
+        System.debug('Null');
+    }
+
+    public void equals(List<NodeElement> equalsList) {
+        System.debug('Null');
+    }
+
+    public void  get(Integer index) {
+        System.debug('Null');
+    }
+
+    public void getSObjectType() {
+        System.debug('Null');
+    }
+
+    public void hashCode() {
+        System.debug('Null');
+    }
+
+    public void indexOf(NodeElement elementForSearch) {
+        System.debug('Null');
+    }
+
+    public Boolean isEmpty() {
+        return False;
+    }
+
+    public void iterator() {
+        System.debug('Null');
+    }
+
+    public void remove(Integer index) {
+        System.debug('Null');
+    }
+
+    public void sort() {
+        System.debug('Null');
+    }
 }
