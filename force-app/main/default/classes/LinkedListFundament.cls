@@ -36,7 +36,7 @@ public with sharing class LinkedListFundament {
 
     public void add(Integer index, NodeElement nodeElem) {
         System.debug('Null');
-    }     
+    }
 
     public void addAll(List<String> innerList) {
         System.debug('Null');
@@ -46,14 +46,8 @@ public with sharing class LinkedListFundament {
     }
 
     public void clear(){
-        if(this.size > 0) {
-            try {
-                this.tail = null;
-                this.head = null;
-            } catch (Exception e) {
-                System.debug(e);
-            }
-        }
+        this.tail = null;
+        this.head = null;
     }
 
     // public void clone() {
